@@ -28,7 +28,7 @@ int Reloj::getHora()
 {
 	return hora;
 }
-int Reloj::Minu
+int Reloj::getMinu()
 {
 	return minu;
 }

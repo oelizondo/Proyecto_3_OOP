@@ -24,7 +24,7 @@ registro::registro(reloj hrEntrada, int idTarjeta)
 void registro::setRegistroHora()
 {
 	this->hrEntrada = hrEntrada;
-}http://pymbook.readthedocs.org/en/latest/
+}
 void registro::setRegistroId()
 {
 	this->idTarjeta = idTarjeta;
