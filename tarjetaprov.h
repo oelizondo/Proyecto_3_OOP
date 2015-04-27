@@ -2,7 +2,7 @@ class tarjetaProv : public tarjeta
 {
 	public:
 		tarjetaProv();
-		tarjetaProv(int ProvidTarjeta);
+		tarjetaProv(int ProvidTarjeta, string empresa);
 		int getIdTarjetaPprovrov(){return idTarjeta;};
 		void setIdTarjetaprov(idTarjeta){this->idTarjeta = idTarjeta;};
 		void calculaPago(reloj horaEntrada, reloj horaSalida, int tarifa);

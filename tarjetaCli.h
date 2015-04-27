@@ -1,9 +1,9 @@
 class tarjetaCli : public tarjeta
 {
 	public:
-		tarjetaClio();
+		tarjetaCli();
 		tarjetaCli(int idTarjeta, int idCli);
-		int getIdTarjetaClio(){return idTarjeta;};
+		int getIdTarjetaCli(){return idTarjeta;};
 		void setIdTarjetaCli(idTarjeta){this->idTarjeta = idTarjeta;};
 		void calculaPago(reloj horaEntrada, reloj horaSalida, int tarifa);
 		void muestraDatos();
