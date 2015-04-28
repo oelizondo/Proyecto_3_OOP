@@ -4,13 +4,13 @@ class tarjetaCli : public tarjeta
 		tarjetaCli();
 		tarjetaCli(int idTarjeta, int idCli);
 		int getIdTarjetaCli(){return idTarjeta;};
-		void setIdTarjetaCli(idTarjeta){this->idTarjeta = idTarjeta;};
-		void calculaPago(reloj horaEntrada, reloj horaSalida, int tarifa);
+		void setIdTarjetaCli(int idTarjeta){this->idTarjeta = idTarjeta;};
+		int calculaPago(Reloj horaEntrada, Reloj horaSalida, int tarifa);
 		void muestraDatos();
 	protected:
 		int idCli;		
 };
-tarjetaCli::tarjetaCli() : tarjeta();
+tarjetaCli::tarjetaCli() : tarjeta()
 {
 	idCli = 0;
 }
@@ -18,11 +18,11 @@ tarjetaCli::tarjetaCli(int idTarjeta, int idCli) : tarjeta(idTarjeta)
 {
 	this-> idCli = idCli;
 }
-void tarjetaCli::calculaPago(reloj horaEntrada, reloj horaSalida, int tarifa)
+int tarjetaCli::calculaPago(Reloj horaEntrada, Reloj horaSalida, int tarifa)
 {
-	cout << "Debes pagar: " << tarjetaCli.calculaHorasCobrar(reloj horaEntrada, reloj horaSalida)*tarifa << " pesos." << endl;
+	return calculaHorasCobrar(horaEntrada, horaSalida)*tarifa;
 }
-void tarjetaCli::muestrDatos()
+void tarjetaCli::muestraDatos()
 {
 	cout << "Identifiacion: " << idTarjeta << endl;
 	cout << "Identifiacion de cliente: " << idCli << endl;

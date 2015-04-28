@@ -2,3 +2,24 @@
 1429631865 source:/home/oscar/Documents/C++/Proyecto 3/main.cpp
 	<iostream>
 
+1430239039 source:/home/oscar/Documents/Github/Proyecto_3_OOP/main.cpp
+	<iostream>
+	"reloj.h"
+	"registro.h"
+	"tarjeta.h"
+	"tarjetaempleado.h"
+	"tarjetaCli.h"
+	"tarjetaprov.h"
+
+1430238992 /home/oscar/Documents/Github/Proyecto_3_OOP/reloj.h
+
+1430238920 /home/oscar/Documents/Github/Proyecto_3_OOP/registro.h
+
+1430239994 /home/oscar/Documents/Github/Proyecto_3_OOP/tarjeta.h
+
+1430240221 /home/oscar/Documents/Github/Proyecto_3_OOP/tarjetaempleado.h
+
+1430249810 /home/oscar/Documents/Github/Proyecto_3_OOP/tarjetaCli.h
+
+1430249941 /home/oscar/Documents/Github/Proyecto_3_OOP/tarjetaprov.h
+

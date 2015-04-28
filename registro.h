@@ -2,30 +2,39 @@ class registro
 {
 	public:
 		registro();
-		registro(reloj hrEntrada, int idTarjeta);
-		void setRegistroHora(reloj hrEntrada);
+		registro(Reloj hrEntrada, int idTarjeta);
+		void setRegistroHora(Reloj hrEntrada);
 		void setRegistroId(int idTarjeta);
-		reloj getRegistroHora(){return reloj;};
-		int getRegistroId(){return idTarjeta;};
+		Reloj getRegistroHora();
+		int getRegistroId();
 	protected:
-		reloj hrEntrada;
+		Reloj hrEntrada;
 		int idTarjeta;
 };
 registro::registro()
 {
-	hrEntrada =  reloj();
+	Reloj rNuevo;
+	hrEntrada = rNuevo;
 	idTarjeta = 0;
 }
-registro::registro(reloj hrEntrada, int idTarjeta)
+registro::registro(Reloj hrEntrada, int idTarjeta)
 {
 	this-> hrEntrada = hrEntrada;
 	this->idTarjeta = idTarjeta;
 }
-void registro::setRegistroHora()
+void registro::setRegistroHora(Reloj hrEntrada)
 {
 	this->hrEntrada = hrEntrada;
 }
-void registro::setRegistroId()
+void registro::setRegistroId(int idTarjeta)
 {
 	this->idTarjeta = idTarjeta;
+}
+Reloj registro::getRegistroHora()
+{
+	return hrEntrada;
+}
+int registro::getRegistroId()
+{
+	return idTarjeta;
 }

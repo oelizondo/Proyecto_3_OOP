@@ -4,26 +4,26 @@ class tarjetaEmpleado : public tarjeta
 		tarjetaEmpleado();
 		tarjetaEmpleado(int idTarjeta, string tienda);
 		int getIdTarjetaEmpleado(){return idTarjeta;};
-		void setIdTarjetaEmpleado(idTarjeta){this->idTarjeta = idTarjeta;};
-		void calculaPago(reloj horaEntrada, reloj horaSalida, int tarifa);
+		void setIdTarjetaEmpleado(int idTarjeta){this->idTarjeta = idTarjeta;};
+		int calculaPago(Reloj horaEntrada, Reloj horaSalida, int tarifa);
 		void muestraDatos();
 	protected:
 		string tienda;
 		
 };
-tarjetaEmpleado() : tarjeta();
+tarjetaEmpleado::tarjetaEmpleado() : tarjeta()
 {
-	Tienda = "n/a";
+	tienda = "n/a";
 }
-tarjetaEmpleado(int idTarjeta, string tienda) : tarjeta(idTarjeta)
+tarjetaEmpleado::tarjetaEmpleado(int idTarjeta, string tienda) : tarjeta(idTarjeta)
 {
-	this-> tienda = tienda
+	this-> tienda = tienda;
 }
-int tarjetaEmpleado::calculaPago(reloj horaEntrada, reloj horaSalida, int tarifa)
+int tarjetaEmpleado::calculaPago(Reloj horaEntrada, Reloj horaSalida, int tarifa)
 {
-	cout << "Debes pagar: 0 pesos." << endl;;
+	return 0;
 }
-void tarjetaCli::muestrDatos()
+void tarjetaEmpleado::muestraDatos()
 {
 	cout << "Identifiacion: " << idTarjeta << endl;
 	cout << "Tienda: " << tienda << endl;

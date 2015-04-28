@@ -1,28 +1,29 @@
+
 class Reloj
 {
 public:
-    hrIni();
-    hrIni(int hora, int minu);
+    Reloj();
+    Reloj(int hora, int minu);
     int getHora();
     int getMinu();
     void setHora(int hh);
     void setMinu(int mm);
     void muestra();
-    bool operator >= (Reloj horaEntrada, Reloj horaSalida);
-    bool operator - (Reloj horaEntrada, Reloj horaSalida);
-    bool operator ==(Reloj horaEntrada, Reloj horaSalida);
-    Reloj operator-(Reloj horaSalida);
+    bool operator >= (Reloj horaEntrada);
+    bool operator - (Reloj horaEntrada);
+    bool operator ==(Reloj horaEntrada);
+    //Reloj operator-(Reloj horaSalida);
     friend ostream & operator <<(ostream &os, Reloj r);
     friend istream & operator >>(istream &is, Reloj &r);
 private:
     int hora, minu;
 };
-Reloj::hrIni()
+Reloj::Reloj()
 {
 	hora = 12;
 	minu = 0;
 }
-Reloj::hrIni(int hora, int minu)
+Reloj::Reloj(int hora, int minu)
 {
 	this->hora = hora;
 	this->minu = minu;
@@ -64,9 +65,9 @@ void Reloj::muestra()
 	}
 }
 
-bool Reloj :: operator >= (Reloj horaEntrada, Reloj horaSalida )
+bool Reloj :: operator >= (Reloj horaSalida)
 {
-    if( horaEntrada.hora > horaSalida.hora)
+    if( this-> hora > horaSalida.hora)
     {
         return true;
         
@@ -76,27 +77,27 @@ bool Reloj :: operator >= (Reloj horaEntrada, Reloj horaSalida )
     }
 }
 
-bool Reloj :: operator - (Reloj horaEntrada, Reloj horaSalida)
+bool Reloj :: operator - (Reloj horaSalida)
 {
-    Reloj rNuevo();
-    rNuevo().setHora(horaSalida.hora - horaEntrada.hora);
+    Reloj rNuevo;
+    rNuevo.setHora(this->hora - horaSalida.hora);
 }
 
-bool Reloj :: operator== (Reloj horaEntrada, Reloj horaSalida)
+bool Reloj :: operator== (Reloj horaSalida)
 {
-    return  hora == horaEntrada.getHora() && minu == horaSalida.getMinu();
+    return  (this->hora == horaSalida.getHora() && this->minu == horaSalida.getMinu())?true:false;
 }
 
-ostream& operator <<(ostream &os, Reloj r)
+/*ostream& operator <<(ostream &os, Reloj r)
 {
 
-    if(hh <10 && mm < 10)
-        os << "0"  << hh << ":" << "0" << mm << endl;
-        else if (hh >10 && mm > 10)
-            os << hh << ":" << mm << endl;
-        else if (hh< 10 && mm > 10)
-            os << "0" << hora <<":" << minu << endl;
-    }
+    if(hora <10 && minu < 10)
+        os << "0"  << hh << ":" << "0" << minu << endl;
+    else if (hora >10 && minu > 10)
+        os << hora << ":" << minu << endl;
+    else if (hora< 10 && minu > 10)
+        os << "0" << hora <<":" << minu << endl;
+    
 }
 
 istream& operator>>(istream &is, Reloj &r)
@@ -105,5 +106,4 @@ istream& operator>>(istream &is, Reloj &r)
     is >> r.hh;
     cout <<"Teclea los minutos ":
     is >> r.mm;
-  
-}
+}*/

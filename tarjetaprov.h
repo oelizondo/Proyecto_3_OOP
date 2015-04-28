@@ -4,25 +4,25 @@ class tarjetaProv : public tarjeta
 		tarjetaProv();
 		tarjetaProv(int ProvidTarjeta, string empresa);
 		int getIdTarjetaPprovrov(){return idTarjeta;};
-		void setIdTarjetaprov(idTarjeta){this->idTarjeta = idTarjeta;};
-		void calculaPago(reloj horaEntrada, reloj horaSalida, int tarifa);
+		void setIdTarjetaprov(int idTarjeta){this->idTarjeta = idTarjeta;};
+		int calculaPago(Reloj horaEntrada, Reloj horaSalida, int tarifa);
 		void muestraDatos();
 	protected:
 		string empresa;
 };
-tarjetaProv() : tarjeta();
+tarjetaProv::tarjetaProv() : tarjeta()
 {
 	empresa = "n/a";
 }
-tarjetaProv(int idTarjeta, string empresa) : tarjeta(idTarjeta)
+tarjetaProv::tarjetaProv(int idTarjeta, string empresa) : tarjeta(idTarjeta)
 {
 	this -> empresa = empresa;
 }
-void tarjetaProv::calculaPago(reloj horaEntrada, reloj horaSalida, int tarifa)
+int tarjetaProv::calculaPago(Reloj horaEntrada, Reloj horaSalida, int tarifa)
 {
-	cout << "Debes pagar: " << (tarjetaProv.calculaHorasCobrar(reloj horaEntrada, reloj horaSalida)-1)*tarifa << " pesos." << endl;
+	return (calculaHorasCobrar(horaEntrada, horaSalida)-1)*tarifa;
 }
-void tarjetaCli::muestrDatos()
+void tarjetaProv::muestraDatos()
 {
 	cout << "Identifiacion: " << idTarjeta << endl;
 	cout << "Empresa: " << empresa << endl; 
