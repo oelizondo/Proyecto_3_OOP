@@ -9,6 +9,7 @@ public:
     void setHora(int hh);
     void setMinu(int mm);
     void muestra();
+    bool check(int hora, int minu);
     bool operator >= (Reloj horaEntrada);
     bool operator - (Reloj horaEntrada);
     bool operator ==(Reloj horaEntrada);
@@ -28,6 +29,10 @@ Reloj::Reloj(int hora, int minu)
 	this->hora = hora;
 	this->minu = minu;
     
+}
+bool Reloj::check(int hora, int minu)
+{
+    return (hora < 24 && minu < 60)?true:false;
 }
 int Reloj::getHora()
 {

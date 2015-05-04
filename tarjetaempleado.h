@@ -5,7 +5,7 @@ class tarjetaEmpleado : public tarjeta
 		tarjetaEmpleado(int idTarjeta, int idEmp, string tienda);
 		int getIdTarjetaEmpleado(){return idTarjeta;};
 		void setIdTarjetaEmpleado(int idTarjeta){this->idTarjeta = idTarjeta;};
-		int calculaPago(Reloj horaEntrada, Reloj horaSalida, int tarifa);
+		double calculaPago(Reloj horaEntrada, Reloj horaSalida, int tarifa);
 		void muestraDatos();
 	protected:
 		string tienda;
@@ -22,9 +22,9 @@ tarjetaEmpleado::tarjetaEmpleado(int idTarjeta, int idEmp, string tienda) : tarj
 	this-> tienda = tienda;
 	this->idEmp = idEmp;
 }
-int tarjetaEmpleado::calculaPago(Reloj horaEntrada, Reloj horaSalida, int tarifa)
+double tarjetaEmpleado::calculaPago(Reloj horaEntrada, Reloj horaSalida, int tarifa)
 {
-	return 0;
+	return 0.0;
 }
 void tarjetaEmpleado::muestraDatos()
 {

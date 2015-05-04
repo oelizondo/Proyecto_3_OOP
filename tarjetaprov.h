@@ -5,7 +5,7 @@ class tarjetaProv : public tarjeta
 		tarjetaProv(int ProvidTarjeta, int idPro, string empresa);
 		int getIdTarjetaPprovrov(){return idTarjeta;};
 		void setIdTarjetaprov(int idTarjeta){this->idTarjeta = idTarjeta;};
-		int calculaPago(Reloj horaEntrada, Reloj horaSalida, int tarifa);
+		double calculaPago(Reloj horaEntrada, Reloj horaSalida, int tarifa);
 		void muestraDatos();
 	protected:
 		string empresa;
@@ -21,9 +21,9 @@ tarjetaProv::tarjetaProv(int idTarjeta, int idPro, string empresa) : tarjeta(idT
 	this -> empresa = empresa;
 	this -> idPro = idPro;
 }
-int tarjetaProv::calculaPago(Reloj horaEntrada, Reloj horaSalida, int tarifa)
+double tarjetaProv::calculaPago(Reloj horaEntrada, Reloj horaSalida, int tarifa)
 {
-	return (calculaHorasCobrar(horaEntrada, horaSalida)-1)*tarifa;
+	return ((calculaHorasCobrar(horaEntrada, horaSalida)-1)*(tarifa/100+1));
 }
 void tarjetaProv::muestraDatos()
 {
