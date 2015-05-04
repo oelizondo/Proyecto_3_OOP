@@ -23,3 +23,26 @@
 
 1430249941 /home/oscar/Documents/Github/Proyecto_3_OOP/tarjetaprov.h
 
+1430706413 source:c:\users\oscar\documents\github\proyecto_3_oop\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	"reloj.h"
+	"registro.h"
+	"tarjeta.h"
+	"tarjetaempleado.h"
+	"tarjetaCli.h"
+	"tarjetaprov.h"
+
+1430699932 c:\users\oscar\documents\github\proyecto_3_oop\reloj.h
+
+1430699932 c:\users\oscar\documents\github\proyecto_3_oop\registro.h
+
+1430699932 c:\users\oscar\documents\github\proyecto_3_oop\tarjeta.h
+
+1430699932 c:\users\oscar\documents\github\proyecto_3_oop\tarjetaempleado.h
+
+1430699932 c:\users\oscar\documents\github\proyecto_3_oop\tarjetacli.h
+
+1430699932 c:\users\oscar\documents\github\proyecto_3_oop\tarjetaprov.h
+
