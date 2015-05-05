@@ -20,10 +20,11 @@ tarjetaCli::tarjetaCli(int idTarjeta, int idCli) : tarjeta(idTarjeta)
 }
 double tarjetaCli::calculaPago(Reloj horaEntrada, Reloj horaSalida, int tarifa)
 {
-	return (calculaHorasCobrar(horaEntrada, horaSalida)*(tarifa/100));
+	return calculaHorasCobrar(horaEntrada, horaSalida)*tarifa;
 }
 void tarjetaCli::muestraDatos()
 {
-	cout << "Identifiacion: " << idTarjeta << endl;
-	cout << "Identifiacion de cliente: " << idCli << endl;
+	cout << "Cliente" << endl;
+	cout << "Numero de cliente: " << idCli << endl;
+	cout << "Tarjeta: " << idTarjeta << endl;
 }

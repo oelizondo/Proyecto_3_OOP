@@ -62,11 +62,11 @@ void Reloj::muestra()
 	}
 	else if (hora > 10 && minu > 10)
 	{
-		cout << hora << minu << endl;
+		cout << hora << ":" << minu << endl;
 	}
 	else
 	{
-		cout << hora << "0" << minu << endl;
+		cout << hora << "0" << ":" << minu << endl;
 	}
 }
 

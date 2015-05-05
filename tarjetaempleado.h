@@ -28,6 +28,8 @@ double tarjetaEmpleado::calculaPago(Reloj horaEntrada, Reloj horaSalida, int tar
 }
 void tarjetaEmpleado::muestraDatos()
 {
-	cout << "Identifiacion: " << idTarjeta << endl;
+	cout << "Empleado" << endl;
+	cout << "Numero de empleado: " << idEmp << endl;
+	cout << "Tarjeta: " << idTarjeta << endl;
 	cout << "Tienda: " << tienda << endl;
 }

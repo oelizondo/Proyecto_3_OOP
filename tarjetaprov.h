@@ -23,10 +23,12 @@ tarjetaProv::tarjetaProv(int idTarjeta, int idPro, string empresa) : tarjeta(idT
 }
 double tarjetaProv::calculaPago(Reloj horaEntrada, Reloj horaSalida, int tarifa)
 {
-	return ((calculaHorasCobrar(horaEntrada, horaSalida)-1)*(tarifa/100+1));
+	return (calculaHorasCobrar(horaEntrada, horaSalida)-1)*tarifa;
 }
 void tarjetaProv::muestraDatos()
 {
-	cout << "Identifiacion: " << idTarjeta << endl;
+	cout << "Proveedor" << endl;
+	cout << "Numero de Proveedor: " << idPro << endl;
+	cout << "Tarjeta:  " << idTarjeta << endl;
 	cout << "Empresa: " << empresa << endl; 
 }
