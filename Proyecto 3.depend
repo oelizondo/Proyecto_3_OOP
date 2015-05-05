@@ -2,6 +2,8 @@
 1429631865 source:/home/oscar/Documents/C++/Proyecto 3/main.cpp
 	<iostream>
 
+1429631865 
+
 1430239039 source:/home/oscar/Documents/Github/Proyecto_3_OOP/main.cpp
 	<iostream>
 	"reloj.h"
@@ -10,6 +12,8 @@
 	"tarjetaempleado.h"
 	"tarjetaCli.h"
 	"tarjetaprov.h"
+
+1430785099 ov.h"
 
 1430238992 /home/oscar/Documents/Github/Proyecto_3_OOP/reloj.h
 
@@ -45,4 +49,27 @@
 1430780739 c:\users\oscar\documents\github\proyecto_3_oop\tarjetacli.h
 
 1430780752 c:\users\oscar\documents\github\proyecto_3_oop\tarjetaprov.h
+
+1430843207 source:/home/oscar/Documents/Developing/C++/Proyecto_3_OOP/main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	"reloj.h"
+	"registro.h"
+	"tarjeta.h"
+	"tarjetaempleado.h"
+	"tarjetaCli.h"
+	"tarjetaprov.h"
+
+1430840702 /home/oscar/Documents/Developing/C++/Proyecto_3_OOP/reloj.h
+
+1430840702 /home/oscar/Documents/Developing/C++/Proyecto_3_OOP/registro.h
+
+1430840702 /home/oscar/Documents/Developing/C++/Proyecto_3_OOP/tarjeta.h
+
+1430840702 /home/oscar/Documents/Developing/C++/Proyecto_3_OOP/tarjetaempleado.h
+
+1430840702 /home/oscar/Documents/Developing/C++/Proyecto_3_OOP/tarjetaCli.h
+
+1430840702 /home/oscar/Documents/Developing/C++/Proyecto_3_OOP/tarjetaprov.h
 

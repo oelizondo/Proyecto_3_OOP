@@ -90,6 +90,7 @@ int main()
                         cout <<  arrTar[i]->calculaHorasCobrar(reloj_1, reloj_2) << endl;
                         cout << "Precio total: " << endl;
                         cout << arrTar[i]->calculaPago(reloj_1, reloj_2, 10) << endl;
+                        arrReg[i].setRegistroId(0);
                     }
                 }
             }
@@ -97,9 +98,9 @@ int main()
         else if(opcion == 3){
             for(int i = 0; i < contReg; i++){
                 for(int m = 0; m < cont; m++){
-                    if(arrReg[i].getRegistroId() == arrTar[m]->getIdTarjeta()){
-                        arrTar[m]->muestraDatos();
-                    }
+                    if(arrReg[i].getRegistroId() == arrTar[m]->getIdTarjeta())
+                        if(arrReg[i].getRegistroId() != 0)
+                            arrTar[i]->muestraDatos();
                 }
             }
         }
@@ -110,19 +111,6 @@ int main()
         }
         else if(opcion == 5)
             break;
-
-
-
-
-
-
-
-
-
-
-
-
     }
-
     return 0;
 }
